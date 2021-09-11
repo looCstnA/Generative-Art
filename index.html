@@ -6,9 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style type="text/css">
 		body {
-		   margin-left:auto;
-		   margin-right:auto;
-		   display:block;
+			overflow: hidden;
+			margin: 0;
+		   
+		   /*display:block;*/
 		}
 	</style>
 </head>
@@ -24,15 +25,17 @@
 		// Select our svg
 		const svg = document.getElementById("svg");
 		
-		// Create a rectangle
-		const rect = document.createElementNS(svgns, "rect");
-		rect.setAttributeNS( null,'x',"40%" );
-		rect.setAttributeNS( null,'y',"40%" );
-		rect.setAttributeNS( null,'width',"20%" );
-		rect.setAttributeNS( null,'height',"20%" );
-		rect.setAttributeNS( null,'style',"fill:blue;stroke:pink;stroke-width:5;opacity:0.5" );
-		
-		// Append rectangle to our svg
-		svg.appendChild(rect);
+		// Create 100 rectangles
+		for( var i=0; i < 100; i++ ){
+			const rect = document.createElementNS(svgns, "rect");
+			rect.setAttributeNS( null,'x',i+"%" );
+			rect.setAttributeNS( null,'y',i+"%" );
+			rect.setAttributeNS( null,'width',"10%" );
+			rect.setAttributeNS( null,'height',"10%" );
+			rect.setAttributeNS( null,'style',"fill:blue;stroke:pink;stroke-width:5;opacity:0.5" );
+			
+			// Append rectangle to our svg
+			svg.appendChild(rect);
+		}
 	</script>
 </body>
