@@ -6,6 +6,12 @@ For that matter, we'll have to create [an element with the specified namespace U
 
 You can now move to the 'Generate100Rectangles' branch of this repository.
 
+Under Linux:
+
+```
+git checkout Generate100Rectangles
+```
+
 # Art Génératif et Inclusif en Javascript
 
 1. Recréez le même rectangle qu'avant, mais en pure (vanilla en anglais) Javascript.
@@ -13,3 +19,9 @@ You can now move to the 'Generate100Rectangles' branch of this repository.
 Pour cela, nous devrons faire référence à un URI d'espace de noms (ça a l'air compliqué comme ça mais ça ne l'est pas): [Crée un élément avec l'URI de l'espace de noms spécifié et un nom qualifié.](https://developer.mozilla.org/fr/docs/Web/API/Document/createElementNS)
 
 Vous pouvez maintenant vous rendre sur la branche 'Generate100Rectangles' de ce répertoire.
+
+Sous linux:
+
+```
+git checkout Generate100Rectangles
+```
