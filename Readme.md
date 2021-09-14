@@ -4,13 +4,24 @@
 
 As simple as a loop.
 
-<!-- You can now move to the 'Generate100Rectangles' branch of this repository.
+We basically have a visualisation of the function y=x, except the y axis is inverted (opposite to be precise), therefore our function is more like y=-x.
+
+That's not very interesting, at least visually.
+
+Before we continue, try adding some randomness to make it more visually appealing.
+
+Try something like: `rect.setAttributeNS( null,'y',Math.random()*100+"%" );`, or, `rect.setAttributeNS( null,'style',"fill:transparent;stroke:"+ ['blue','red','yellow'][Math.round(Math.random()*2)] +";stroke-width:5;opacity:0.5" );` and see what it produces.
+
+
+That's cool and all but when thinking about adding some interactivity to include external inputs in our piece. 
+
+You can now move to the 'Interactivity' branch of this repository.
 
 Under Linux:
 
 ```
-git checkout Generate100Rectangles
-``` -->
+git checkout Interactivity
+```
 
 # Art Génératif et Inclusif en Javascript
 
